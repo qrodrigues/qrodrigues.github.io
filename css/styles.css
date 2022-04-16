@@ -1169,3 +1169,60 @@ nav {
     line-height: 20px;
     text-align: justify;
 }
+
+/* SECTION Certifications */
+
+.certifications{
+    /* background-color:red; */
+    width: 100%;
+    margin-bottom: 10vh;
+    /* height: 100vh; */
+}
+
+.h1-certifications {
+    font-family: Roboto;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 125px;
+}
+
+.h1-certifications span {
+    color: #FCBF49;
+}
+
+.h1-certifications-underline {
+    background-color: black;
+    width: 15vw;
+    height: 10px;
+    margin-left: 125px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 850px) {
+    .h1-certifications {
+        text-align: center;
+        margin-left: 0;
+        font-size: 15vw;
+    }
+    .h1-certifications-underline {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+    }
+}
+
+.certif-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.certification img{
+    width: 15vw;
+}
