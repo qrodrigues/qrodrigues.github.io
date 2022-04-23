@@ -1223,3 +1223,43 @@ nav {
 .certification img{
     width: 15vw;
 }
+
+/* SECTION Veilles */
+
+.veilles{
+    margin: 10vh 0;
+}
+
+.flex-veilles{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8vh;
+}
+
+.veille{
+    width: 15vw;
+    height: 45vh;
+    background-color: white;
+    margin: 0 20px;
+    /* border: 2px solid black; */
+}
+
+.veille i{
+    font-size: 80px;
+    margin-top: -5vh;
+    color: #F77F00;
+    background-color: #fff;
+    padding: 5px 20px 30px 20px;
+    border-radius: 20%;
+}
+
+.veille .veille-title{
+    display: flex;
+    justify-content: center;
+}
+
+.veille h2{
+    text-align: center;
+    margin-top: -3vh;
+}
