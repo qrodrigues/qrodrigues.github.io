@@ -206,3 +206,11 @@ function changeProjectInfo() {
         $('.download-cr').hide().attr('href', `files/${projects[currIndex].file}`).fadeIn('slow');
     }
 }
+
+// Not abble to send mail
+
+function failedMail(){
+    if(confirm("Toutes mes excuses, le système d'envoie de messages n'est pas fonctionnel.\n\nSouhaitez-vous m'envoyer un mail directement à :\nquentin.rodrigues1912@gmail.com")){
+        window.location.href = "mailto:quentin.rodrigues1912@gmail.com";
+    }
+}
