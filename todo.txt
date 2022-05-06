@@ -1,0 +1,9 @@
+Navbar responsive à terminer
+
+petit ecart entre chaque section skills en mode telephone
+
+faire grossir image certifications
+
+veille technologique à adapter
+
+contact pour telephone
