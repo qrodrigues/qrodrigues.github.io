@@ -184,6 +184,12 @@ $(window).scroll( function() {
         $('.about-item').addClass('selected-item');
     } else if(scrolled_val > 3000 && scrolled_val <= 4800){
         $('.project-item').addClass('selected-item');
+    } else if(scrolled_val > 4800 && scrolled_val <= 5200){
+        $('.graduate-item').addClass('selected-item');
+    } else if(scrolled_val > 5200 && scrolled_val <= 6500){
+        $('.veille-item').addClass('selected-item');
+    } else if(scrolled_val > 6500){
+        $('.contact-item').addClass('selected-item');
     }
 });
 
