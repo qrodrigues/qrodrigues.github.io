@@ -233,16 +233,16 @@ function controls() {
 
 function changeProjectInfo() {
     if (currIndex > 4) {
-        $('.projectImage').attr('src', ``).css({ 'opacity': 0 }).animate({ 'opacity': 1 }, 500)
+        $('.project-image').attr('src', ``).css({ 'opacity': 0 }).animate({ 'opacity': 1 }, 500)
         $('.tiltle-text').hide().text("").fadeIn('slow');
         $('.project-tiltle').hide().text("Bientôt disponible").fadeIn('slow');
         $('.h1-date-project').hide().text("").fadeIn('slow');
         $('.download-cr').hide();
     } else {
-        $('.projectImage').attr('src', `images/projets/${currIndex}.png`).css({ 'opacity': 0 }).animate({ 'opacity': 1 }, 500)
-        $('.tiltle-text').hide().text(projects[currIndex].description).fadeIn('slow');
-        $('.project-tiltle').hide().text(projects[currIndex].titre).fadeIn('slow');
-        $('.h1-date-project').hide().text(projects[currIndex].dates).fadeIn('slow');
+        $('.project-image').css({ 'opacity': 0, 'backgroundImage': `url(images/projets/${currIndex}.png)` }).animate({ 'opacity': 1 }, 500)
+        $('.project-description').hide().text(projects[currIndex].description).fadeIn('slow');
+        $('.project-title').hide().text(projects[currIndex].titre).fadeIn('slow');
+        $('.project-date-p').hide().text(projects[currIndex].dates).fadeIn('slow');
         $('.download-cr').hide().attr('href', `files/${projects[currIndex].file}`).fadeIn('slow');
     }
 }
