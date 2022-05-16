@@ -24,7 +24,7 @@ const projects = [
         "titre":"Symfony - LePtitJardinier",
         "description":"J'ai utilisé le Framework Symfony pour ce projet. L'objectif de ce projet est la création d'un site de jardinerie, dans le but de créer des devis pour tailler une ou plusieurs haies. J'ai également intégré un système d'authentification sécurisé, avec une contrôle d'habilitation fonctionnel.",
         "dates": "AVRIL 2022",
-        "file":""
+        "file":"symfony-leptitjardinier.pdf"
     },
     {
         "titre":"Angular - Gestion des visites",
@@ -35,20 +35,26 @@ const projects = [
     {
         "titre": "Stage - SILPC",
         "description": "Durant la période du 24 mai 2021 au 30 juin 2021, j'ai réalisé un stage dans l'entreprise SILPC, dans le cadre de mon BTS SIO. Le projet qui m'a été confié est la création d'un système de réservation de salles de réunion et de bureaux pour les locaux du SILPC. J'ai découvert le framework Symfony ainsi que les bases de AJAX.",
-        "dates": "2020 - 2021",
+        "dates": "JUIN 2021",
         "file": "rapport_stage_btssio_2020-2021.pdf"
     },
     {
         "titre":"AP - Basket",
         "description":"Lors de ma première année de BTS SIO, j'ai appris le langage PHP. Ainsi, j'ai eu comme projet la réalisation d'une page qui gère une ligue de basket en utilisant le modèle MVC. Ce travail était en équipe de deux, et nous avions pour mission la gestion des équipes, et la création de convocation au format PDF pour les arbitres.",
-        "dates":"2020 - 2021",
+        "dates":"MARS 2021",
         "file":"ap-basket.pdf"
     },
     {
         "titre":"AP - Messagerie JAVA",
         "description":"La réalisation d'une messagerie en utilisant le langage Java et SQL est une mission qui m'a été donné pendant ma première année de BTS SIO. L'objectif est l'échange entre utilisateur de message. Chaque utilisateur possède ses identifiants.",
         "dates":"2020 - 2021",
-        "file":""
+        "file":"ap-messagerie-java.pdf"
+    },
+    {
+        "titre":"AP - Anabase (hôtellerie)",
+        "description":"Le projet Anabase est un projet réalisé durant le premier semestre de ma deuxième année de BTS SIO. C'est un projet de gestion d'hôtel et de réservation. Nous devions gérer le CRUD pour les hôtels, et également les réservations pour un hôtel. Anabase est un projet réalisé en équipe de deux, en utilisant le architecture MVC.",
+        "dates":"2021 - 2022",
+        "file":"ap-messagerie-java.pdf"
     }
 ]
 
@@ -232,7 +238,7 @@ function controls() {
 }
 
 function changeProjectInfo() {
-    if (currIndex > 4) {
+    if (currIndex > projects.size) {
         $('.project-image').attr('src', ``).css({ 'opacity': 0 }).animate({ 'opacity': 1 }, 500)
         $('.tiltle-text').hide().text("").fadeIn('slow');
         $('.project-tiltle').hide().text("Bientôt disponible").fadeIn('slow');
@@ -243,7 +249,11 @@ function changeProjectInfo() {
         $('.project-description').hide().text(projects[currIndex].description).fadeIn('slow');
         $('.project-title').hide().text(projects[currIndex].titre).fadeIn('slow');
         $('.project-date-p').hide().text(projects[currIndex].dates).fadeIn('slow');
-        $('.download-cr').hide().attr('href', `files/${projects[currIndex].file}`).fadeIn('slow');
+        if(!projects[currIndex].file == ""){
+            $('.download-cr').hide().attr('href', `files/${projects[currIndex].file}`).fadeIn('slow');
+        } else{
+            $('.download-cr').hide();
+        }
     }
 }
 

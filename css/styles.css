@@ -46,6 +46,60 @@ html {
     border-radius: 10px;
 }
 
+/* CUSTOM */
+
+.left-title{
+    font-family: Roboto;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 125px;
+}
+
+.center-title{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.left-title span, .center-title span{
+    color: #FCBF49;
+}
+
+.left-underline-md, .left-underline-sm{
+    background-color: black;
+    height: 10px;
+    margin-left: 125px;
+    border-radius: 4px;
+}
+
+.left-underline-sm{
+    width: 10vw;
+}
+
+.left-underline-md{
+    width: 15vw;
+}
+
+
+@media screen and (max-width: 850px) {
+    .left-title, .center-title {
+        text-align: center;
+        margin-left: 0;
+        font-size: 15vw;
+    }
+    
+    .left-underline-sm, .left-underline-md{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+    }
+}
+
 /* NAVBAR */
 
 /* nav {
@@ -485,7 +539,7 @@ html {
     height: 60vh;
 }
 
-.parcour-tiltle {
+.parcour-title {
     position: relative;
     background-color: #FCBF49;
     margin-right: auto;
@@ -498,7 +552,7 @@ html {
     box-shadow: 0px 0px 24px 2px #00000040;
 }
 
-.parcour-tiltle h1 {
+.parcour-title h1 {
     padding: 20px;
 }
 
@@ -522,7 +576,7 @@ html {
     .divParcour {
         height: 130vh;
     }
-    .parcour-tiltle {
+    .parcour-title {
         width: 80vw;
     }
 }
@@ -583,7 +637,7 @@ html {
     }
 }
 
-.projets-tiltle {
+.projets-title {
     position: relative;
     top: 20px;
     margin-bottom: 150px;
@@ -878,7 +932,7 @@ html {
     flex-direction: column;
 }
 
-.tiltle{
+.title{
     display: flex;
     flex-direction: column;
 }
@@ -899,16 +953,16 @@ html {
     color: #F77F00;
 }
 
-.tiltle .icon {
+.title .icon {
     width: 8vw;
 }
 
-.project-tiltle {
+.project-title {
     font-size: 45px;
     margin-top: 30px;
 }
 
-.tiltle-text {
+.title-text {
     margin-top: 15px;
     width: 25vw;
     font-weight: 550;
@@ -1022,7 +1076,7 @@ html {
 }
 
 @media screen and (max-width: 850px) {
-    .tiltle .icon {
+    .title .icon {
         width: 20vw;
         margin-left: 50%;
         transform: translateX(-50%);
@@ -1032,12 +1086,12 @@ html {
         flex-direction: column;
     }
 
-    .project-tiltle {
+    .project-title {
         font-size: 10vw;
         text-align: center;
     }
 
-    .tiltle-text {
+    .title-text {
         margin-top: 5vh;
         width: 100%;
         font-weight: 550;
@@ -1151,17 +1205,34 @@ html {
 }
 
 .project-text h3{
-    font-size: 4rem;
+    font-size: 3vw;
+}
+
+.inline-project-title{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.download-cr{
+    margin-left: 15px;
+    margin-top: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.download-cr:hover{
+    color: var(--main-dark);
 }
 
 .project-text p{
-    font-size: 1.5rem;
+    font-size: 1vw;
 }
 
 .project-date{
     grid-area: 4 / 1 / 5 / 4;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -1203,6 +1274,7 @@ html {
     .project-date{
         grid-area: 3 / 2 / 4 / 5;
         text-align: center;
+        font-size: 4vw;
     }
     
     .project-image{
@@ -1216,6 +1288,14 @@ html {
     
     .project-arrow-stepper{
         grid-area: 7 / 3 / 8 / 4;
+    }
+
+    .project-text h3{
+        font-size: 4vw;
+    }
+    
+    .project-text p{
+        font-size: 1.2vw;
     }
 }
 
@@ -1559,7 +1639,7 @@ html {
 }
 
 .veille p{
-    text-align: justify;
+    text-align: center;
     margin: 10px 20px 0 20px;
     height: 20vh;
 }
