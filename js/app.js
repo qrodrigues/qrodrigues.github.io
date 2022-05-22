@@ -54,7 +54,7 @@ const projects = [
         "titre":"AP - Anabase (hôtellerie)",
         "description":"Le projet Anabase est un projet réalisé durant le premier semestre de ma deuxième année de BTS SIO. C'est un projet de gestion d'hôtel et de réservation. Nous devions gérer le CRUD pour les hôtels, et également les réservations pour un hôtel. Anabase est un projet réalisé en équipe de deux, en utilisant le architecture MVC.",
         "dates":"2021 - 2022",
-        "file":"ap-messagerie-java.pdf"
+        "file":"ap-anabase.pdf"
     }
 ]
 
@@ -107,69 +107,6 @@ window.addEventListener('resize', rotateFrise);
 rotateFrise();
 
 // Navigation menu
-
-// var navEnable = false;
-// $('.reponsiveNav').hide();
-
-// navSmall.addEventListener('click', () => {
-//     if (!navEnable) {
-//         openNav();
-//     } else {
-//         closeNav();
-//     }
-
-//     function openNav() {
-//         nav.style.width = '100%';
-//         nav.style.height = '25vh';
-
-//         barre2.style.opacity = '0';
-
-//         barre1.style.width = '50px';
-//         barre2.style.width = '50px';
-//         barre3.style.width = '50px';
-
-//         barre1.style.position = 'absolute';
-//         barre2.style.position = 'absolute';
-//         barre3.style.position = 'absolute';
-
-//         barre1.style.transform = 'rotate(45deg)';
-//         barre2.style.transform = 'rotate(45deg)';
-//         barre3.style.transform = 'rotate(-45deg)';
-
-//         barre1.style.marginTop = '8px';
-//         barre3.style.marginBottom = '8px';
-
-//         navSmall.style.display = 'block';
-//         navSmall.style.top = '20px';
-//         navSmall.style.left = '10px';
-
-//         $('nav').css({ 'border-bottom-left-radius': '20px' });
-//         $('.reponsiveNav').show(700);
-//         navEnable = true;
-//     }
-
-//     function closeNav() {
-//         nav.removeAttribute("style");
-//         navSmall.removeAttribute("style");
-//         barre1.removeAttribute("style");
-//         barre2.removeAttribute("style");
-//         barre3.removeAttribute("style");
-
-//         $('nav').css({ 'border-bottom-left-radius': '0' });
-//         $('.reponsiveNav').hide(300);
-//         navEnable = false;
-//     }
-
-//     $(window).resize(function () {
-//         var win = $(this);
-//         if (win.height() > 750) {
-//             closeNav();
-//             $('nav').css({ 'border-bottom-left-radius': '20px' });
-//         } else {
-//             $('nav').css({ 'border-bottom-left-radius': '0' });
-//         }
-//     })
-// })
 
 $('.nav-item').mouseover((event)=>{
     $(event.currentTarget).addClass('selected-item');
@@ -264,5 +201,3 @@ function failedMail(){
         window.location.href = "mailto:quentin.rodrigues1912@gmail.com";
     }
 }
-
-showBtssio();
