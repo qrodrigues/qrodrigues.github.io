@@ -264,3 +264,5 @@ function failedMail(){
         window.location.href = "mailto:quentin.rodrigues1912@gmail.com";
     }
 }
+
+showBtssio();

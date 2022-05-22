@@ -3,6 +3,7 @@
 
 :root{
     --main-dark: #F77F00;
+    --main-light: #FCBF49;
     --background: #EAE2B7;
 }
 
@@ -1455,6 +1456,7 @@ html {
     -webkit-box-shadow: 0px 0px 20px -10px #000000; 
     box-shadow: 0px 0px 20px -10px #000000;
     overflow-y: scroll;
+    padding-bottom: 20px;
 }
 
 .fermer-btssio{
@@ -1537,6 +1539,46 @@ html {
 .option-description{
     line-height: 20px;
     text-align: justify;
+}
+
+.bts-table{
+    border: 2px solid black;
+    width: 60%;
+    margin: 3vh auto;
+    border-collapse: collapse;
+}
+
+.bts-table tbody tr:not(.table-title){
+    cursor: pointer;
+}
+
+.bts-table tbody tr td{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.bts-table tbody tr:hover:not(.table-title){
+    background-color:lightgray;
+}
+
+.bts-table tbody .table-title{
+    background-color: var(--main-light);
+}
+
+.bts-table tbody .table-title td{
+    color: white;
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+.poursuite-title{
+    margin: 2vh 12vw 0 12vw;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.poursuite-description{
+    margin: 0 13vw;
 }
 
 /* SECTION Certifications */
