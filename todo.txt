@@ -1,9 +1,3 @@
-Navbar responsive à terminer
+CSS veille technologique
 
-petit ecart entre chaque section skills en mode telephone
-
-faire grossir image certifications
-
-veille technologique à adapter
-
-contact pour telephone
+Finir de completer section BTS SIO

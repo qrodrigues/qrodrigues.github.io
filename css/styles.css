@@ -1613,11 +1613,11 @@ html {
 
 .veille{
     width: 15vw;
-    height: 45vh;
-    /* background-color: white; */
+    height: 46vh;
     margin: 0 20px;
     box-shadow: 0px 12px 16px #36363624;
-    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
 }
 
 .veille i{
@@ -1645,10 +1645,20 @@ html {
 }
 
 .veille ul{
-    margin: 10px 20px 0 20px;
+    margin: auto 20px 20px 20px;
 }
 
 .veille ul li{
-    margin-left: 20px;
-    list-style: none;
+    margin-left: 30px;
+    list-style: square;
+}
+
+.veille ul li a{
+    text-decoration: underline;
+    color: black;
+    transition: .3s;
+}
+
+.veille ul li a:hover{
+    color: var(--main-dark);
 }
