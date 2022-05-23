@@ -1656,7 +1656,7 @@ html {
 
 .veille{
     width: 15vw;
-    height: 46vh;
+    /* height: 46vh; */
     margin: 0 20px;
     box-shadow: 0px 12px 16px #36363624;
     display: flex;
@@ -1688,7 +1688,7 @@ html {
 }
 
 .veille ul{
-    margin: auto 20px 20px 20px;
+    margin: 25% 20px 20px 20px;
 }
 
 .veille ul li{
