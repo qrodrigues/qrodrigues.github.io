@@ -55,6 +55,12 @@ const projects = [
         "description":"Le projet Anabase est un projet réalisé durant le premier semestre de ma deuxième année de BTS SIO. C'est un projet de gestion d'hôtel et de réservation. Nous devions gérer le CRUD pour les hôtels, et également les réservations pour un hôtel. Anabase est un projet réalisé en équipe de deux, en utilisant le architecture MVC.",
         "dates":"2021 - 2022",
         "file":"ap-anabase.pdf"
+    },
+    {
+        "titre":"Stage - Okantis",
+        "description":"Durant la période du 03 janvier 2022 au 18 février 2022, j'ai réalisé mon second stage de BTS SIO dans l'entreprise Okantis, c'est la même entreprise que mon premier stage de BTS, mais elle a changé de nom. Le projet qui m'a été confié est la création d'un système de réservation de matériels et véhicules pour les locaux de Okantis. J'ai découvert le framework Vue.JS ainsi que les bases de ExpressJS.",
+        "dates": "JANV-FEV 2022",
+        "file":"rapport_stage_btssio_2022.pdf"
     }
 ]
 
@@ -119,12 +125,12 @@ $('.nav-item').mouseout((event)=>{
 $(window).scroll( function() {
     var scrolled_val = $(document).scrollTop().valueOf();
     $('.nav-item').removeClass('selected-item');
-    if(scrolled_val > 800 && scrolled_val <= 2000){
-        $('.skills-item').addClass('selected-item');
-    } else if(scrolled_val > 2000 && scrolled_val <= 2500){
-        $('.parcours-item').addClass('selected-item');
-    } else if(scrolled_val > 2500 && scrolled_val <= 3000){
+    if(scrolled_val > 800 && scrolled_val <= 1600){
         $('.about-item').addClass('selected-item');
+    } else if(scrolled_val > 1600 && scrolled_val <= 2300){
+        $('.parcours-item').addClass('selected-item');
+    } else if(scrolled_val > 2300 && scrolled_val <= 3000){
+        $('.skills-item').addClass('selected-item');
     } else if(scrolled_val > 3000 && scrolled_val <= 4800){
         $('.project-item').addClass('selected-item');
     } else if(scrolled_val > 4800 && scrolled_val <= 5200){

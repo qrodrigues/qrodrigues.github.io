@@ -410,6 +410,7 @@ html {
 
 .skills {
     width: 100%;
+    margin-top: 10vh;
 }
 
 .h1-skills {
@@ -587,7 +588,7 @@ html {
 
 .about {
     width: 100%;
-    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .about h1 {
