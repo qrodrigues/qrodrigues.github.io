@@ -61,6 +61,12 @@ const projects = [
         "description":"Durant la période du 03 janvier 2022 au 18 février 2022, j'ai réalisé mon second stage de BTS SIO dans l'entreprise Okantis, c'est la même entreprise que mon premier stage de BTS, mais elle a changé de nom. Le projet qui m'a été confié est la création d'un système de réservation de matériels et véhicules pour les locaux de Okantis. J'ai découvert le framework Vue.JS ainsi que les bases de ExpressJS.",
         "dates": "JANV-FEV 2022",
         "file":"rapport_stage_btssio_2022.pdf"
+    },
+    {
+        "titre":"Android - Portes ouvertes",
+        "description":"L'utilisateur de Android Studio, pour la création d'une application mobile est un projet qui m'a été demandé durant ma formation. Nous devions réalisé en application relié à une base de données interne au téléphone, cette base de données est controlée à l'aide de SQLite. L'objectif est la découverte de Android Studio, par la création d'une application d'inscription aux journées portes-ouvertes d'une école. De plus, le directeur peut donner un avis sur les différents inscrits, à l'aide de personnage souriants ou non.",
+        "dates": "2021 - 2022",
+        "file":""
     }
 ]
 
