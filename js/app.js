@@ -83,25 +83,9 @@ window.addEventListener('load', () => {
         .typeString('Bonjour, je suis <span style="color: #FCBF49"> Rodrigues Quentin</span>')
         .pauseFor(100)
         .changeDelay(35)
-        .typeString('<br><span style="font-weight: normal; font-size: 20px; line-height: 30px">étudiant en <a style="color: black" title="En savoir plus sur le BTS Services Informatiques aux Organisations." onclick="showBtssio()"><u class="hover-btssio">BTS SIO</u></a>, spécialisé en développement.</span>')
+        .typeString('<br><span style="font-weight: normal; font-size: 20px; line-height: 30px">étudiant en <a href="https://www.3il-ingenieurs.fr/nos-bachelors/bachelor-developpement-logiciel-et-web/" style="color: black" title="En savoir plus sur le Bachelor Développement Logiciel et Web de 3iL."><u class="hover-btssio">Bachelor</u></a> Développement Logiciel et Web.</span>')
         .start()
 })
-
-$('.content-btssio').hide()
-$('body').css('overflow', 'auto')
-var isBtssioOpen = false;
-
-function showBtssio(){
-    $('.content-btssio').fadeIn();
-    $('body').css('overflow', 'hidden')
-    isBtssioOpen = true;
-}
-
-function hideBtssio(){
-    $('.content-btssio').fadeOut();
-    $('body').css('overflow', 'auto')
-    isBtssioOpen = false;
-}
 
 // Parcours SVG rotation
 
